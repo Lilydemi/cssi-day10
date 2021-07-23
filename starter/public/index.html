@@ -16,6 +16,47 @@
     <script defer src="js/main.js"></script>
   </head>
   <body>
-    <h1 class="title has-text-centered">You Cool App!</h1>
+      <div class="columns">
+          <div class="column is-half is-offset-one-quarter">
+            <h1 class="title has-text-centered">Movie Recommender!</h1>
+    <h2 class="subtitle has-text-centered">Let us know how you're feeling and what you want to watch, and we'll find a movie for you!</h2>
+    
+    <p>I like movies that are...
+
+        <div class="select">
+            <select id="movieLength">
+                <option>Choose one</option>
+                <option>short (1-2 hours)</option>
+                <option>long (2+ hours)</option>
+            </select>
+        </div></p>
+    
+
+<p>I want this movie to make me feel...
+    <div class="select">
+        <select id="movieFeeling">
+            <option>Choose one</option>
+            <option>Happy</option>
+            <option>Motivated</option>
+            <option>Sad</option>
+            <option>Scared</option>
+        </select>
+    </div></p>
+
+        <p>I want this movie to be a...
+            <div class="select">
+                <select id="movieGenre">
+                    <option>Choose one</option>
+                    <option>Comedy</option>
+                    <option>Horror</option>
+                    <option>Documentary</option>
+                </select>
+            </div> </p>
+            <br>
+            <button id="submitBtn" class="button">Get your movie!</button>
+        <br>
+        <h2 id="movieName" class="mt-5 title"></h2>        
+          </div>
+      </div>      
   </body>
 </html>
